@@ -1,0 +1,650 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*here i define the varaibles i will use*/
+
+:root {
+    --midnight: #071B2C;
+    --navy: #0B2539;
+    --teal: #0D9488;
+    --teal-light: #2DD4BF;
+    --background: #F1F7F8;
+    --white: #FFFFFF;
+    --text: #233746;
+    --muted: #64748B;
+    --border: #DCE7EA;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+button,
+a {
+    transition: 0.3s ease;
+}
+
+
+/* ==============================
+   2. HEADER
+================================ */
+
+.header {
+    background-color: var(--midnight);
+    color: var(--white);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 7%;
+    gap: 25px;
+}
+
+.logo h1 {
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.logo h1 span {
+    color: var(--teal-light);
+}
+
+.logo p {
+    font-size: 11px;
+    color: #A7C4CE;
+    letter-spacing: 1px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar a {
+    color: #D5E4E9;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    color: var(--teal-light);
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.auth-buttons a {
+    padding: 9px 18px;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.auth-buttons a:first-child {
+    border: 1px solid var(--teal-light);
+    color: var(--teal-light);
+}
+
+.auth-buttons a:last-child {
+    background-color: var(--teal);
+    color: var(--white);
+}
+
+.auth-buttons a:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ==============================
+   3. HERO SECTION
+================================ */
+
+.hero {
+    background: linear-gradient(
+        120deg,
+        #071B2C,
+        #0B3545,
+        #075B59
+    );
+
+    color: var(--white);
+
+    padding: 110px 10%;
+    min-height: 470px;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero-tagline {
+    color: var(--teal-light);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero h2 span {
+    color: var(--teal-light);
+    display: block;
+}
+
+.hero-content > p:not(.hero-tagline) {
+    color: #C2D5DC;
+    font-size: 17px;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hero-buttons a {
+    padding: 13px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.hero-buttons a:first-child {
+    background-color: var(--teal);
+    color: var(--white);
+}
+
+.hero-buttons a:last-child {
+    border: 1px solid var(--teal-light);
+    color: var(--white);
+}
+
+.hero-buttons a:hover {
+    transform: translateY(-3px);
+}
+
+
+/* ==============================
+   4. SEARCH SECTION
+================================ */
+
+.search-section {
+    padding: 65px 7%;
+    text-align: center;
+}
+
+.search-section h2,
+.quick-actions h2,
+.recent-items h2,
+.campus-locations h2,
+.how-it-works h2 {
+    color: var(--navy);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.search-section > p,
+.campus-locations > p,
+.how-it-works > p {
+    color: var(--muted);
+    margin-bottom: 30px;
+}
+
+.search-form {
+    background-color: var(--white);
+    padding: 20px;
+
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(7, 27, 44, 0.07);
+
+    display: flex;
+    gap: 12px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.search-form input,
+.search-form select {
+    flex: 1;
+    min-width: 0;
+    padding: 13px;
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    outline: none;
+    background-color: var(--white);
+    color: var(--text);
+}
+
+.search-form input:focus,
+.search-form select:focus {
+    border-color: var(--teal);
+}
+
+.search-form button {
+    background-color: var(--teal);
+    color: var(--white);
+    border: none;
+    padding: 13px 25px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #08766E;
+}
+
+
+/* ==============================
+   5. QUICK ACTIONS
+================================ */
+
+.quick-actions {
+    padding: 55px 7%;
+    text-align: center;
+    background-color: var(--white);
+}
+
+.action-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.action-card {
+    background-color: #F1F7F8;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 35px;
+    text-align: left;
+}
+
+.action-card h3 {
+    color: var(--navy);
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.action-card p {
+    color: var(--muted);
+    margin-bottom: 25px;
+}
+
+.action-card a {
+    display: inline-block;
+    background-color: var(--teal);
+    color: var(--white);
+    padding: 11px 20px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.action-card a:hover {
+    background-color: #08766E;
+}
+
+
+/* ==============================
+   6. RECENT ITEMS
+================================ */
+
+.recent-items {
+    padding: 70px 7%;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 15px;
+}
+
+.section-heading a {
+    color: var(--teal);
+    font-weight: bold;
+}
+
+.section-heading a:hover {
+    color: var(--navy);
+}
+
+.item-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.item-card {
+    background-color: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 15px rgba(7, 27, 44, 0.05);
+
+    padding-bottom: 20px;
+    transition: 0.3s ease;
+}
+
+.item-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(7, 27, 44, 0.12);
+}
+
+.item-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    display: block;
+    background-color: #DCE7EA;
+}
+
+.item-card h3 {
+    color: var(--navy);
+    font-size: 19px;
+    padding: 0 18px;
+    margin: 8px 0;
+}
+
+.item-card > p:not(.item-status) {
+    color: var(--muted);
+    font-size: 13px;
+    padding: 0 18px;
+}
+
+.item-status {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    margin: 15px 18px 0;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.lost {
+    color: #B91C1C;
+    background-color: #FEE2E2;
+}
+
+.found {
+    color: #047857;
+    background-color: #D1FAE5;
+}
+
+.item-card > a {
+    display: inline-block;
+    margin: 15px 18px 0;
+    color: var(--teal);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.item-card > a:hover {
+    color: var(--navy);
+}
+
+
+/* ==============================
+   7. CAMPUS LOCATIONS
+================================ */
+
+.campus-locations {
+    background-color: var(--white);
+    padding: 65px 7%;
+    text-align: center;
+}
+
+.location-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.location-container article {
+    background-color: var(--midnight);
+    color: var(--white);
+    padding: 25px;
+    border-radius: 10px;
+    border-bottom: 4px solid var(--teal);
+    transition: 0.3s ease;
+}
+
+.location-container article:hover {
+    transform: translateY(-5px);
+    background-color: var(--navy);
+}
+
+.location-container h3 {
+    font-size: 17px;
+}
+
+
+/* ==============================
+   8. HOW IT WORKS
+================================ */
+
+.how-it-works {
+    padding: 70px 7%;
+    text-align: center;
+}
+
+.steps-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.step {
+    background-color: var(--white);
+    padding: 35px 25px;
+    border-radius: 12px;
+    border-top: 4px solid var(--teal);
+    box-shadow: 0 5px 20px rgba(7, 27, 44, 0.05);
+}
+
+.step h3 {
+    color: var(--teal);
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.step p {
+    color: var(--muted);
+}
+
+
+/* ==============================
+   9. CALL TO ACTION
+================================ */
+
+.cta {
+    background: linear-gradient(
+        120deg,
+        var(--midnight),
+        #075B59
+    );
+
+    color: var(--white);
+    padding: 75px 7%;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.cta p {
+    color: #C2D5DC;
+    margin-bottom: 25px;
+}
+
+.cta a {
+    display: inline-block;
+    background-color: var(--teal-light);
+    color: var(--midnight);
+    font-weight: bold;
+    padding: 13px 25px;
+    border-radius: 8px;
+}
+
+.cta a:hover {
+    background-color: var(--white);
+    transform: translateY(-3px);
+}
+
+
+/* ==============================
+   10. FOOTER
+================================ */
+
+.footer {
+    background-color: #041320;
+    color: var(--white);
+    padding: 45px 7% 20px;
+    text-align: center;
+}
+
+.footer-content h2 {
+    color: var(--teal-light);
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    color: #A7C4CE;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: #C2D5DC;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: var(--teal-light);
+}
+
+.copyright {
+    border-top: 1px solid #254457;
+    padding-top: 20px;
+    color: #8CA5B1;
+    font-size: 13px;
+}
+
+
+/* ==============================
+   11. RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 1000px) {
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .item-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search-form {
+        flex-wrap: wrap;
+    }
+
+    .search-form input,
+    .search-form select {
+        flex-basis: 40%;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 75px 7%;
+    }
+
+    .hero h2 {
+        font-size: 34px;
+    }
+
+    .search-form {
+        flex-direction: column;
+    }
+
+    .search-form input,
+    .search-form select {
+        width: 100%;
+    }
+
+    .action-container,
+    .item-container,
+    .location-container,
+    .steps-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cta h2 {
+        font-size: 25px;
+    }
+
+}

@@ -1,0 +1,454 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Found It | Campus Lost & Found</title>
+
+    <meta name="description"
+        content="A student-powered campus lost and found platform. Report lost belongings, discover found items, and reconnect with their owners.">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    
+
+    <header class="header">
+
+        <div class="logo">
+            <h1>Found It<span>.</span></h1>
+            <p>Campus Lost & Found</p>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lost-items.html">Lost Items</a></li>
+                <li><a href="found-items.html">Found Items</a></li>
+                <li><a href="report-item.html">Report Item</a></li>
+            </ul>
+        </nav>
+
+        <div class="auth-buttons">
+            <a href="login.html">Login</a>
+            <a href="login.html">Sign Up</a>
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="hero-tagline">
+                    BUILT FOR STUDENT COMMUNITIES
+                </p>
+
+                <h2>
+                    Lost Something on Campus?
+                    <span>Let's Help You Find It!</span>
+                </h2>
+
+                <p>
+                    A student-powered lost and found community.
+                    Report lost belongings, discover found items,
+                    and reconnect with their rightful owners.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="lost-items.html">
+                        Find My Item
+                    </a>
+
+                    <a href="report-item.html">
+                        Report an Item
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- === SEARCH SECTION =====-->
+
+        <section class="search-section">
+
+            <h2>Find Your Missing Belongings</h2>
+
+            <p>
+                Search through items reported by fellow students.
+            </p>
+
+            <form class="search-form">
+
+                <input
+                    type="text"
+                    name="item"
+                    placeholder="What are you looking for?"
+                >
+
+                <select name="category">
+
+                    <option value="">All Categories</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="documents">Documents & IDs</option>
+                    <option value="accessories">Accessories</option>
+                    <option value="books">Books & Stationery</option>
+                    <option value="personal">Personal Belongings</option>
+                    <option value="other">Other</option>
+
+                </select>
+
+                <select name="location">
+
+                    <option value="">All Campus Locations</option>
+                    <option value="library">Library</option>
+                    <option value="classroom">Lecture Hall</option>
+                    <option value="lab">Computer Lab</option>
+                    <option value="cafeteria">Cafeteria</option>
+                    <option value="parking">Parking Area</option>
+                    <option value="other">Other</option>
+
+                </select>
+
+                <button type="submit">
+                    Search
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- ========= ACTIONS ================= -->
+
+        <section class="quick-actions">
+
+            <h2>What Happened?</h2>
+
+            <div class="action-container">
+
+                <article class="action-card">
+
+                    <h3>I Lost Something</h3>
+
+                    <p>
+                        Missing something on campus?
+                        Let other students help you find it.
+                    </p>
+
+                    <a href="report-item.html?type=lost">
+                        Report Lost Item
+                    </a>
+
+                </article>
+
+
+                <article class="action-card">
+
+                    <h3>I Found Something</h3>
+
+                    <p>
+                        Found something that belongs to someone?
+                        Help return it to its owner.
+                    </p>
+
+                    <a href="report-item.html?type=found">
+                        Report Found Item
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= RECENT ITEMS ================= -->
+
+        <section class="recent-items">
+
+            <div class="section-heading">
+
+                <h2>Recently Reported Items</h2>
+
+                <a href="lost-items.html">
+                    View All Items
+                </a>
+
+            </div>
+
+
+            <div class="item-container">
+
+                <!-- ITEM 1 -->
+
+                <article class="item-card">
+
+                    <img
+                        src="images/wallet.jpg"
+                        alt="Black wallet"
+                    >
+
+                    <p class="item-status lost">
+                        LOST
+                    </p>
+
+                    <h3>Black Wallet</h3>
+
+                    <p>Category: Accessories</p>
+
+                    <p>Location: Library</p>
+
+                    <a href="item-details.html">
+                        View Details
+                    </a>
+
+                </article>
+
+
+                <!-- ITEM 2 -->
+
+                <article class="item-card">
+
+                    <img
+                        src="images/bottle.jpg"
+                        alt="Water bottle"
+                    >
+
+                    <p class="item-status found">
+                        FOUND
+                    </p>
+
+                    <h3>Water Bottle</h3>
+
+                    <p>Category: Personal Belongings</p>
+
+                    <p>Location: Cafeteria</p>
+
+                    <a href="item-details.html">
+                        View Details
+                    </a>
+
+                </article>
+
+
+                <!-- ITEM 3 -->
+
+                <article class="item-card">
+
+                    <img
+                        src="images/id-card.jpg"
+                        alt="Student identification card"
+                    >
+
+                    <p class="item-status lost">
+                        LOST
+                    </p>
+
+                    <h3>Student ID Card</h3>
+
+                    <p>Category: Documents & IDs</p>
+
+                    <p>Location: Lecture Hall</p>
+
+                    <a href="item-details.html">
+                        View Details
+                    </a>
+
+                </article>
+
+
+                <!-- ITEM 4 -->
+
+                <article class="item-card">
+
+                    <img
+                        src="images/charger.jpg"
+                        alt="Laptop charger"
+                    >
+
+                    <p class="item-status found">
+                        FOUND
+                    </p>
+
+                    <h3>Laptop Charger</h3>
+
+                    <p>Category: Electronics</p>
+
+                    <p>Location: Computer Lab</p>
+
+                    <a href="item-details.html">
+                        View Details
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CAMPUS LOCATIONS ================= -->
+
+        <section class="campus-locations">
+
+            <h2>Explore Campus Locations</h2>
+
+            <p>
+                Browse belongings reported around common
+                university spaces.
+            </p>
+
+            <div class="location-container">
+
+                <article>
+                    <h3>Library</h3>
+                </article>
+
+                <article>
+                    <h3>Lecture Halls</h3>
+                </article>
+
+                <article>
+                    <h3>Computer Labs</h3>
+                </article>
+
+                <article>
+                    <h3>Cafeteria</h3>
+                </article>
+
+                <article>
+                    <h3>Parking Area</h3>
+                </article>
+
+                <article>
+                    <h3>Common Areas</h3>
+                </article>
+
+            </div>
+
+        </section>
+
+
+    
+
+        <section class="how-it-works">
+
+            <h2>How Found It Works</h2>
+
+            <p>
+                Three simple steps to reunite students
+                with their belongings.
+            </p>
+
+            <div class="steps-container">
+
+                <article class="step">
+
+                    <h3>01. Report</h3>
+
+                    <p>
+                        Submit details and a picture
+                        of your lost or found item.
+                    </p>
+
+                </article>
+
+
+                <article class="step">
+
+                    <h3>02. Discover</h3>
+
+                    <p>
+                        Explore reported items and
+                        find potential matches.
+                    </p>
+
+                </article>
+
+
+                <article class="step">
+
+                    <h3>03. Reconnect</h3>
+
+                    <p>
+                        Connect with the finder or owner
+                        and arrange a safe handover.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CALL TO ACTION ================= -->
+
+        <section class="cta">
+
+            <h2>Found Something? Be Someone's Hero!</h2>
+
+            <p>
+                A small act of kindness can make
+                a big difference to another student.
+            </p>
+
+            <a href="report-item.html?type=found">
+                Report a Found Item
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <h2>Found It.</h2>
+
+            <p>
+                Helping students find what they've lost
+                and return what they've found.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+            <a href="lost-items.html">Lost Items</a>
+            <a href="found-items.html">Found Items</a>
+            <a href="report-item.html">Report Item</a>
+
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 Found It. All rights reserved.
+        </p>
+
+    </footer>
+
+
+</body>
+</html>
