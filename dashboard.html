@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboard | FindIt</title>
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <main class="dashboard-page">
+        <header class="dashboard-header">
+            <a class="brand" href="index.html">Find<span>It</span></a>
+            <button class="outline-button" id="logoutButton" type="button">Logout</button>
+        </header>
+
+        <section class="dashboard-intro">
+            <p class="eyebrow">YOUR ACCOUNT</p>
+            <h1>My Dashboard</h1>
+            <p class="subtitle" id="welcomeMessage">Loading your account...</p>
+        </section>
+
+        <section class="dashboard-panel">
+            <h2>My reports</h2>
+            <p class="subtitle">Your lost and found reports will appear here.</p>
+            <div id="reportsList" class="reports-list">
+                <p class="empty-state">Your reports will be connected here when the FindIt items table is ready.</p>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="js/dashboard.js"></script>
+</body>
+</html>

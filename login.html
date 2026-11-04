@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | FindIt</title>
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <main class="auth-page">
+        <a class="brand" href="index.html">Find<span>It</span></a>
+
+        <section class="auth-card">
+            <p class="eyebrow">WELCOME BACK</p>
+            <h1>Login to your account</h1>
+            <p class="subtitle">Sign in to manage your lost and found reports.</p>
+
+            <form id="loginForm">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email"
+                       placeholder="you@example.com" autocomplete="email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password"
+                       placeholder="Enter your password" autocomplete="current-password" required>
+
+                <p class="form-message" id="formMessage" aria-live="polite"></p>
+                <button class="primary-button" type="submit" id="submitButton">Login</button>
+            </form>
+
+            <p class="switch-page">Don't have an account? <a href="signup.html">Sign up</a></p>
+            <a class="back-link" href="index.html">← Back to home</a>
+        </section>
+        <p class="footer-note">FindIt · Helping lost items find their way home</p>
+    </main>
+
+    <script type="module" src="js/auth.js"></script>
+</body>
+</html>
