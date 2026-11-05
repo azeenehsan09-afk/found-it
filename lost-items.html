@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost Items | FindIt</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/lost.css">
+</head>
+<body>
+
+    <header class="page-header">
+        <h1>FindIt</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="report-item.html">Report Item</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+
+    <main class="lost-container">
+
+        <section class="page-intro">
+            <h2>Lost Something?</h2>
+            <p>Report your missing item and let the campus community help you find it.</p>
+        </section>
+
+        <!-- Lost Item Form -->
+        <section class="form-section">
+            <h2>Report a Lost Item</h2>
+
+            <form id="lostItemForm">
+
+                <div class="form-group">
+                    <label for="itemName">Item Name</label>
+                    <input type="text" id="itemName"
+                        placeholder="e.g. Black Wallet" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select id="category" required>
+                        <option value="">Select Category</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Documents">Documents</option>
+                        <option value="Accessories">Accessories</option>
+                        <option value="Bags">Bags</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description"
+                        placeholder="Describe your item..."
+                        rows="4"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="itemDate">Date Lost</label>
+                    <input type="date" id="itemDate">
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Last Seen Location</label>
+                    <input type="text" id="location"
+                        placeholder="e.g. University Library" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="imageUrl">Item Image URL (Optional)</label>
+                    <input type="url" id="imageUrl"
+                        placeholder="Paste image URL">
+                </div>
+
+                <button type="submit" id="submitLostButton">
+                    Submit Lost Report
+                </button>
+
+                <p id="formMessage"></p>
+
+            </form>
+        </section>
+
+        <!-- Lost Items Listing -->
+        <section class="items-section">
+            <h2>Recently Lost Items</h2>
+            <p>Items reported missing by students.</p>
+
+            <div id="lostItemsList" class="items-grid">
+                <p>Loading lost items...</p>
+            </div>
+        </section>
+
+    </main>
+
+    <script type="module" src="js/lost.js"></script>
+
+</body>
+</html>
