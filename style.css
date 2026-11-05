@@ -647,3 +647,61 @@ a {
     }
 
 }
+
+/* ==============================
+   SEARCH RESULTS (home page)
+================================ */
+
+.search-section {
+    scroll-margin-top: 20px;
+}
+
+.search-results {
+    max-width: 1100px;
+    margin: 25px auto 0;
+    text-align: left;
+}
+
+.search-count {
+    color: var(--navy);
+    margin-bottom: 15px;
+}
+
+.search-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 22px;
+}
+
+.search-message {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px;
+    text-align: center;
+}
+
+.search-message h3 {
+    color: var(--navy);
+    margin-bottom: 6px;
+}
+
+.search-message p {
+    color: var(--muted);
+}
+
+.search-message-links {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 16px;
+}
+
+.search-message-links a {
+    color: var(--teal);
+    font-weight: bold;
+}
+
+.search-message-links a:hover {
+    color: var(--navy);
+}
