@@ -1,0 +1,139 @@
+
+/* =================================
+   FINDIT - MIDNIGHT BLUE + TEAL
+================================= */
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #0B1026;
+    color: #E6FFFA;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 5%;
+    background: #12233D;
+    border-bottom: 1px solid rgba(94, 234, 212, 0.2);
+}
+
+header h1 {
+    color: #E6FFFA;
+    margin: 0;
+    font-size: 28px;
+}
+
+header a {
+    color: #5EEAD4;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header a:hover {
+    color: #14B8A6;
+}
+
+/* Main Container */
+
+.report-container {
+    max-width: 950px;
+    margin: 75px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.report-container h2 {
+    font-size: 36px;
+    color: #E6FFFA;
+    margin-bottom: 12px;
+}
+
+.report-container > p {
+    color: #B8C5D9;
+    font-size: 16px;
+    margin-bottom: 45px;
+}
+
+/* Report Cards */
+
+.report-options {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.report-card {
+    width: 280px;
+    padding: 40px 25px;
+    background: linear-gradient(
+        145deg,
+        #12233D,
+        #0B1026
+    );
+    border: 1px solid #1E3A5F;
+    border-radius: 16px;
+    text-decoration: none;
+    color: #E6FFFA;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.report-card h3 {
+    color: #5EEAD4;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.report-card p {
+    color: #B8C5D9;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* Hover Effect */
+
+.report-card:hover {
+    transform: translateY(-8px);
+    border-color: #14B8A6;
+    box-shadow: 0 10px 30px rgba(20, 184, 166, 0.15);
+    background: linear-gradient(
+        145deg,
+        #1E3A5F,
+        #12233D
+    );
+}
+
+.report-card:hover h3 {
+    color: #14B8A6;
+}
+
+/* Responsive Design */
+
+@media (max-width: 650px) {
+
+    .report-container {
+        margin: 40px auto;
+    }
+
+    .report-container h2 {
+        font-size: 28px;
+    }
+
+    .report-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .report-card {
+        width: 100%;
+        max-width: 320px;
+        box-sizing: border-box;
+    }
+
+}
