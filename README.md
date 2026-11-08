@@ -80,3 +80,13 @@ Then open <http://localhost:8000>. Or use the **Live Server** extension in VS Co
 ## Tech stack
 
 HTML, CSS, JavaScript (ES modules), Supabase (Auth and Postgres).
+
+
+## Team
+
+Made by two students for the LaunchPad Hackathon.
+
+| Name | GitHub |
+|---|---|
+| Azeen Ehsan | [https://github.com/azeenehsan09-afk](https://github.com/your-username) |
+| Iqra Sehar  | [https://github.com/sehar71769-cloud](https://github.com/teammate-username) |
