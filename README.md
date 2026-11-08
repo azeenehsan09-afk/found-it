@@ -4,7 +4,7 @@ A student-powered lost and found web app. Students report lost or found belongin
 
 Built for the LaunchPad Hackathon with plain HTML, CSS and JavaScript, and [Supabase](https://supabase.com) for login and the database.
 
-![Home page](screenshots/home.png)
+![Home page](Screenshots/Homepage.jpg)
 
 ## Features
 
@@ -19,11 +19,11 @@ Built for the LaunchPad Hackathon with plain HTML, CSS and JavaScript, and [Supa
 
 | Search results | Not reported |
 |---|---|
-| ![Search results](screenshots/search-results.png) | ![Not reported](screenshots/not-reported.png) |
+| ![Search results](Screenshots/Search.jpg) | 
 
-![Campus locations](screenshots/locations.png)
+![Campus locations](Screenshots/CampusLocations.jpg)
 
-![All items](screenshots/all-items.png)
+![All items](Screenshots/ALLitems.jpg)
 
 *Screenshots use sample data.*
 
