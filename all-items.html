@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Items | FindIt</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/lost.css">
+    <link rel="stylesheet" href="css/all-items.css">
+</head>
+<body>
+
+    <header class="page-header">
+        <h1>FindIt</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="lost-items.html">Lost Items</a>
+            <a href="found-items.html">Found Items</a>
+            <a href="report-item.html">Report Item</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+
+    <main class="lost-container">
+
+        <section class="page-intro">
+            <h2>All Reported Items</h2>
+            <p>Every lost and found item reported by students.</p>
+        </section>
+
+        <section class="items-section">
+
+            <div class="filter-bar" role="group" aria-label="Filter items">
+                <button type="button" class="filter-button active" data-filter="all">All</button>
+                <button type="button" class="filter-button" data-filter="lost">Lost</button>
+                <button type="button" class="filter-button" data-filter="found">Found</button>
+            </div>
+
+            <p id="itemsCount" class="items-count"></p>
+
+            <div id="allItemsList" class="items-grid">
+                <p>Loading items...</p>
+            </div>
+        </section>
+
+    </main>
+
+    <script type="module" src="js/all-items.js"></script>
+
+</body>
+</html>

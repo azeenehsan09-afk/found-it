@@ -1,0 +1,60 @@
+.filter-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.filter-button {
+    background: transparent;
+    color: #E6FFFA;
+    border: 1px solid #1E3A5F;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.filter-button:hover {
+    border-color: #14B8A6;
+}
+
+.filter-button.active {
+    background: #14B8A6;
+    border-color: #14B8A6;
+    color: #071B2C;
+    font-weight: bold;
+}
+
+.items-count {
+    color: #B8C5D9;
+    font-size: 14px;
+}
+
+.item-card .item-status.lost {
+    background: rgba(248, 113, 113, 0.15);
+    color: #FCA5A5;
+}
+
+.item-card .item-status.found {
+    background: rgba(20, 184, 166, 0.15);
+    color: #5EEAD4;
+}
+
+.item-card .item-type {
+    margin: 0 8px 0 0;
+}
+
+/* Keep text readable on the dark theme (style.css sets muted colours) */
+.item-card > p:not(.item-status) {
+    color: #B8C5D9;
+    font-size: 14px;
+    padding: 0;
+}
+
+.item-card h3 {
+    padding: 0;
+}
+
+.item-card .item-status {
+    margin: 0 0 8px;
+}

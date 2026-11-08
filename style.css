@@ -705,3 +705,23 @@ a {
 .search-message-links a:hover {
     color: var(--navy);
 }
+
+
+
+.location-container article {
+    cursor: pointer;
+}
+
+.location-container article.active {
+    background-color: var(--teal);
+    border-bottom-color: var(--teal-light);
+}
+
+.location-container article:focus-visible {
+    outline: 3px solid var(--teal-light);
+    outline-offset: 2px;
+}
+
+.campus-locations .search-results {
+    margin-top: 30px;
+}

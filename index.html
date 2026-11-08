@@ -185,10 +185,9 @@
 
                 <h2>Recently Reported Items</h2>
 
-                <a href="lost-items.html">
-                    View All Items
-                </a>
-
+                <a href="all-items.html">
+    View All Items
+</a>
             </div>
 
 
@@ -313,34 +312,35 @@
                 university spaces.
             </p>
 
-            <div class="location-container">
+           <div class="location-container">
 
-                <article>
-                    <h3>Library</h3>
-                </article>
+    <article data-location="library" data-title="Library" role="button" tabindex="0">
+        <h3>Library</h3>
+    </article>
 
-                <article>
-                    <h3>Lecture Halls</h3>
-                </article>
+    <article data-location="lecture" data-title="Lecture Halls" role="button" tabindex="0">
+        <h3>Lecture Halls</h3>
+    </article>
 
-                <article>
-                    <h3>Computer Labs</h3>
-                </article>
+    <article data-location="lab" data-title="Computer Labs" role="button" tabindex="0">
+        <h3>Computer Labs</h3>
+    </article>
 
-                <article>
-                    <h3>Cafeteria</h3>
-                </article>
+    <article data-location="cafeteria" data-title="Cafeteria" role="button" tabindex="0">
+        <h3>Cafeteria</h3>
+    </article>
 
-                <article>
-                    <h3>Parking Area</h3>
-                </article>
+    <article data-location="parking" data-title="Parking Area" role="button" tabindex="0">
+        <h3>Parking Area</h3>
+    </article>
 
-                <article>
-                    <h3>Common Areas</h3>
-                </article>
+    <article data-location="common" data-title="Common Areas" role="button" tabindex="0">
+        <h3>Common Areas</h3>
+    </article>
 
-            </div>
+</div>
 
+<div id="locationResults" class="search-results" aria-live="polite"></div>
         </section>
 
 
@@ -448,5 +448,6 @@
     </footer>
 
 <script type="module" src="js/search.js"></script>
+<script type="module" src="js/location.js"></script>
 </body>
 </html>
